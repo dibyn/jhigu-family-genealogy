@@ -6,7 +6,8 @@ import axios from 'axios';
 
 import { Root } from '@/interfaces';
 
-export const FamilyTreeChart = () => {
+export const Home = () => <FamilyTreeChart />
+const FamilyTreeChart = () => {
   const ref = useRef(null);
   const [nodes, setChartData] = useState<Root[]>([])
   useEffect(() => {
@@ -63,4 +64,4 @@ export const FamilyTreeChart = () => {
   return <div className="tree" id="tree" ref={ref} />;
 };
 
-export default FamilyTreeChart;
+export default Home;
