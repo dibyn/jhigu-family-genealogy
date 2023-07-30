@@ -1,4 +1,5 @@
 'use client';
+import { NextPage } from 'next';
 
 import React, { useRef, useEffect, useState } from 'react';
 import FamilyTree from '@balkangraph/familytree.js';
@@ -6,7 +7,7 @@ import axios from 'axios';
 
 import { Root } from '@/interfaces';
 
-export const Home = () => <FamilyTreeChart />
+const Page: NextPage = () => <FamilyTreeChart />
 const FamilyTreeChart = () => {
   const ref = useRef(null);
   const [nodes, setChartData] = useState<Root[]>([])
@@ -64,4 +65,4 @@ const FamilyTreeChart = () => {
   return <div className="tree" id="tree" ref={ref} />;
 };
 
-export default Home;
+export default Page;
