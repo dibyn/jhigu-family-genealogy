@@ -1,13 +1,30 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import FamilyTree from '@balkangraph/familytree.js';
+import axios from 'axios';
 
-const Chart = () => {
+// import nodes from '../../public/db.json';
+import { Root } from '@/interfaces';
+
+export const FamilyTreeChart = () => {
   const ref = useRef(null);
+  const [nodes, setChartData] = useState<Root[]>([])
+  useEffect(() => {
+    axios('/api/family', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => setChartData(res.data))
+      .catch((error) => console.error(error));
+  }, []);
+  console.log({nodes})
   useEffect(() => {
     if (!ref?.current) return;
-    new FamilyTree(ref?.current, {
+    if(!nodes.length) return
+    const familt = new FamilyTree(ref?.current, {
       nodeTreeMenu: true,
       enableSearch: false,
       menu: {
@@ -23,55 +40,28 @@ const Chart = () => {
         svg: { text: 'Export SVG' },
       },
       mouseScrool: FamilyTree.action.none,
-      nodes: [
-        {
-          id: 1,
-          pids: [2],
-          name: 'Amber McKenzie',
-          gender: 'female',
-          img: 'https://cdn.balkan.app/shared/2.jpg',
-        },
-        {
-          id: 2,
-          pids: [1],
-          name: 'Ava Field',
-          gender: 'male',
-          img: 'https://cdn.balkan.app/shared/m30/5.jpg',
-        },
-        {
-          id: 3,
-          mid: 1,
-          fid: 2,
-          name: 'Peter Stevens',
-          gender: 'male',
-          img: 'https://cdn.balkan.app/shared/m10/2.jpg',
-        },
-        {
-          id: 4,
-          mid: 1,
-          fid: 2,
-          name: 'Savin Stevens',
-          gender: 'male',
-          img: 'https://cdn.balkan.app/shared/m10/1.jpg',
-        },
-        {
-          id: 5,
-          mid: 1,
-          fid: 2,
-          name: 'Emma Stevens',
-          gender: 'female',
-          img: 'https://cdn.balkan.app/shared/w10/3.jpg',
-        },
-      ],
+      nodes,
       nodeBinding: {
         field_0: 'name',
         img_0: 'img',
       },
     });
+    familt.onUpdateNode(async (args) => {
+      await axios
+        .post('/api/family', args, {
+          headers: {
+            'Content-Type': "application/json",
+          },
+        })
+        .then((res) => console.log(res))
+        .catch((error) => console.error(error));
+      //return false; to cancel the operation
+    });
     return () => {
       if (ref?.current) ref.current = null;
     };
-  }, []);
+  }, [nodes]);
   return <div className="tree" id="tree" ref={ref} />;
 };
-export default Chart;
+
+export default FamilyTreeChart;
