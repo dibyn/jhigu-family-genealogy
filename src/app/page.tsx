@@ -4,7 +4,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import FamilyTree from '@balkangraph/familytree.js';
 import axios from 'axios';
 
-// import nodes from '../../public/db.json';
 import { Root } from '@/interfaces';
 
 export const FamilyTreeChart = () => {

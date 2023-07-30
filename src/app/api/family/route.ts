@@ -1,8 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { type NextRequest, NextResponse } from 'next/server'
-
-
 import fs from 'fs';
+import { type NextRequest, NextResponse } from 'next/server'
 
 import { ResponseError, Root } from '@/interfaces';
 
@@ -12,7 +10,7 @@ import data from '../../../../public/db.json';
 export async function GET(_req: Request, res: NextApiResponse<Root[]>) {
   return NextResponse.json(data);
 }
-export async function POST(_req: NextRequest, res: NextResponse<Root[]>) {
+export async function POST(_req: NextRequest) {
   const filePath = './public/db.json';
   let json = await _req.json();
   console.log({json})
