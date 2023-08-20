@@ -1,68 +1,33 @@
-'use client';
-import { NextPage } from 'next';
+import React from 'react';
+import { getPersons } from '@/lib/person-db';
+import { createPerson, deletePerson, updatePerson } from '@/lib/person-db';
 
-import React, { useRef, useEffect, useState } from 'react';
-import FamilyTree from '@balkangraph/familytree.js';
-import axios from 'axios';
+import { FamilyTreeChart } from '../components/family-tree';
+import { Root } from './interfaces';
 
-import { Root } from '@/interfaces';
-
-const Page: NextPage = () => <FamilyTreeChart />
-const FamilyTreeChart = () => {
-  const ref = useRef(null);
-  const [nodes, setChartData] = useState<Root[]>([])
-  useEffect(() => {
-    axios('/api/family', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((res) => setChartData(res.data))
-      .catch((error) => console.error(error));
-  }, []);
-  console.log({nodes})
-  useEffect(() => {
-    if (!ref?.current) return;
-    if(!nodes.length) return
-    const familt = new FamilyTree(ref?.current, {
-      nodeTreeMenu: true,
-      enableSearch: false,
-      menu: {
-        pdf: { text: 'Export PDF' },
-        png: { text: 'Export PNG' },
-        svg: { text: 'Export SVG' },
-        csv: { text: 'Export CSV' },
-        json: { text: 'Export JSON' },
-      },
-      nodeMenu: {
-        pdf: { text: 'Export PDF' },
-        png: { text: 'Export PNG' },
-        svg: { text: 'Export SVG' },
-      },
-      mouseScrool: FamilyTree.action.none,
-      nodes,
-      nodeBinding: {
-        field_0: 'name',
-        img_0: 'img',
-      },
-    });
-    familt.onUpdateNode(async (args) => {
-      await axios
-        .post('/api/family', args, {
-          headers: {
-            'Content-Type': "application/json",
-          },
-        })
-        .then((res) => console.log(res))
-        .catch((error) => console.error(error));
-      //return false; to cancel the operation
-    });
-    return () => {
-      if (ref?.current) ref.current = null;
-    };
-  }, [nodes]);
-  return <div className="tree" id="tree" ref={ref} />;
-};
-
-export default Page;
+export default async function Home() {
+  const { persons } = await getPersons();
+  const handlePersons = async (args: any) => {
+  //  args: {
+  //   addNodesData: object[];
+  //   updateNodesData: object[];
+  //   removeNodeId: string | number;
+  // }
+    "use server"; // mark function as a server action (fixes the error)
+    if (args.addNodesData.length)
+      await createPerson(args.addNodesData[0] as Root);
+    if (args.updateNodesData.length && args.updateNodesData[0]['id'])
+      await updatePerson(
+        args.updateNodesData[0]['id'],
+        args.addNodesData[0] as Root
+      );
+    if (args.removeNodeId) await deletePerson(args.removeNodeId.toString());
+    return false; // to cancel the operation
+  };
+  // console.log({ persons });
+  return (
+    <div className="container mx-auto p-4">
+      <FamilyTreeChart persons={persons} handlePersons={handlePersons} />
+    </div>
+  );
+}
