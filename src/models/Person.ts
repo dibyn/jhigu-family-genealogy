@@ -8,7 +8,7 @@ import {
 } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
 
-@post<PersonClass>('save', function (doc) {
+@post<PersonClass>('save', function (doc: any) {
   if (doc) {
     doc.id = doc._id.toString();
     doc._id = doc.id;
@@ -25,8 +25,10 @@ import mongoose from 'mongoose';
 })
 @ModelOptions({
   schemaOptions: {
-    timestamps: true,
+    timestamps: false,
     collection: 'Person',
+    // id: true,
+    // validateModifiedOnly: false
   },
   options: {
     allowMixed: Severity.ALLOW,
@@ -38,19 +40,20 @@ class PersonClass {
   id: string | number;
   @prop({ required: true })
   gender: 'male' | 'female';
-  @prop({ required: true })
+  @prop({ required: false })
   name: string;
+  @prop({ required: false })
   pids: (number | string)[];
+  @prop({ required: false })
   mid: string | number;
+  @prop({ required: false })
   fid: string | number;
-  photo: string;
+  @prop({ required: false })
+  img: string;
   // birthDate: Date;
-  // @prop({ default: false })
-  // completed: boolean;
   _id: mongoose.Types.ObjectId | string;
-
 }
-const PersonClassType = typeof PersonClass
-const Person =  getModelForClass(PersonClass)
-const r = Person instanceof PersonClass
+// const PersonClassType = typeof PersonClass
+const Person = getModelForClass(PersonClass);
+// const r = Person instanceof PersonClass
 export { Person, PersonClass };

@@ -35,7 +35,6 @@ export async function getPersons(filter: PersonFilter = {}) {
 export async function createPerson(args: Root) {
   try {
     await connectDB();
-    console.log({ Person });
     const person = await Person.create(args);
 
     return {

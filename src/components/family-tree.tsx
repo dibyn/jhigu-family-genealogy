@@ -1,9 +1,8 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
+import axios from 'axios';
 import FamilyTree from '@balkangraph/familytree.js';
 
-import { createPerson, deletePerson, updatePerson } from '@/lib/person-db';
-import { Root } from '@/app/interfaces';
 
 export const FamilyTreeChart = ({
   persons,
@@ -34,8 +33,8 @@ export const FamilyTreeChart = ({
   useEffect(() => {
     if (!ref?.current) return;
     const familt = new FamilyTree(ref?.current, {
-      nodeTreeMenu: false,
-      enableSearch: true,
+      nodeTreeMenu: true,
+      enableSearch: false,
       menu: {
         pdf: { text: 'Export PDF' },
         png: { text: 'Export PNG' },
@@ -55,9 +54,38 @@ export const FamilyTreeChart = ({
         img_0: 'img',
       },
     });
-    familt?.onUpdateNode(async (args) => {
-      console.log({args}, 'ads')
-      handlePersons(args);
+    familt?.onUpdateNode(async (args: any) => {
+      console.log({ args }, 'ads');
+      if (args.addNodesData.length) {
+        try {
+          await axios.post('/api/family', args.addNodesData[0])
+        } catch (error) {
+          console.error(error, `error creating person`)
+        }
+      }
+      if (args.updateNodesData.length && args.updateNodesData[0]['id']) {
+        try {
+          await axios.patch(
+            '/api/family',
+            args.updateNodesData[0]
+          );
+        } catch (error) {
+          console.error(error, `error updating person`)
+        }
+      }
+      console.log(args.removeNodeId)
+      if (args.removeNodeId) {
+        try {
+          await axios.delete(`/api/family`, {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            data: { id: args.removeNodeId }, // Sending the item ID in the request body
+          });
+        } catch (error) {
+          console.error(error, `error delete person`)
+        }
+      }
       return false; // to cancel the operation
     });
     return () => {
