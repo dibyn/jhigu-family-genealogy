@@ -6,6 +6,16 @@ const nextConfig = {
     serverActions: true,
     serverComponentsExternalPackages: ['mongoose', '@typegoose/typegoose'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'primefaces.org',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

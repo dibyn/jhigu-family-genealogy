@@ -1,11 +1,13 @@
 import React from 'react';
+// pages/index.tsx
+
 import { getPersons } from '@/lib/person-db';
 import { createPerson, deletePerson, updatePerson } from '@/lib/person-db';
+import { FamilyTreeChart } from '@/components/family-tree';
 
-import { FamilyTreeChart } from '../components/family-tree';
 import { Root } from './interfaces';
 
-export default async function Home() {
+export default async function HomePage() {
   const { persons } = await getPersons();
   const handlePersons = async (args: any) => {
   //  args: {
