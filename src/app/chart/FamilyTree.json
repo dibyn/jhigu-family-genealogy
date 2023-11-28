@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "64f755c6036f8452c34b8ae7",
+    "gender": "male",
+    "parentId": [
+      "_mo20",
+      "_x41p",
+      "_1251"
+    ],
+    "name": "श्री पुन्नराज"
+  },
+  {
+    "id": "64f75673036f8452c34b8af2",
+    "gender": "male",
+    "parentId": [
+      "_r93o"
+    ],
+    "fatherId": "64f755c6036f8452c34b8ae7",
+    "name": "देवदत्त"
+  },
+  {
+    "id": "64f75752036f8452c34b8af7",
+    "gender": "male",
+    "parentId": [
+      "_7fa5"
+    ],
+    "fatherId": "64f755c6036f8452c34b8ae7",
+    "name": "धनदत्त"
+  },
+  {
+    "id": "64f75788036f8452c34b8afc",
+    "gender": "male",
+    "parentId": [
+      "_yae8"
+    ],
+    "fatherId": "64f755c6036f8452c34b8ae7",
+    "name": "शिवदत"
+  },
+  {
+    "id": "64f758d8036f8452c34b8b02",
+    "gender": "male",
+    "parentId": [
+      "_ew5u"
+    ],
+    "motherId": "_r93o",
+    "fatherId": "64f75673036f8452c34b8af2",
+    "name": "कृष्ण"
+  },
+  {
+    "id": "64f75906036f8452c34b8b07",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f75673036f8452c34b8af2",
+    "fatherId": "_r93o",
+    "name": "राजमासिंह"
+  },
+  {
+    "id": "64f75970036f8452c34b8b0b",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_yae8",
+    "fatherId": "64f75788036f8452c34b8afc",
+    "name": "आशामदु"
+  },
+  {
+    "id": "64f759a0036f8452c34b8b10",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f75788036f8452c34b8afc",
+    "fatherId": "_yae8",
+    "name": "आनसिंह"
+  },
+  {
+    "id": "64f759e6036f8452c34b8b12",
+    "gender": "male",
+    "parentId": [
+      "_gcid"
+    ],
+    "motherId": "_7fa5",
+    "fatherId": "64f75752036f8452c34b8af7",
+    "name": "धनबीर"
+  },
+  {
+    "id": "64f75a30036f8452c34b8b19",
+    "gender": "male",
+    "parentId": [
+      "_npga"
+    ],
+    "motherId": "64f75752036f8452c34b8af7",
+    "fatherId": "_7fa5",
+    "name": "दशमादत्त"
+  },
+  {
+    "id": "64f75ab4036f8452c34b8b1c",
+    "gender": "male",
+    "parentId": [
+      "_rfq2"
+    ],
+    "motherId": "_ew5u",
+    "fatherId": "64f758d8036f8452c34b8b02",
+    "name": "कृष्ण बहादुर"
+  },
+  {
+    "id": "64f75ad3036f8452c34b8b21",
+    "gender": "male",
+    "parentId": [
+      "_gb8n"
+    ],
+    "motherId": "64f758d8036f8452c34b8b02",
+    "fatherId": "_ew5u",
+    "name": "राम बहादुर"
+  },
+  {
+    "id": "64f75ca9036f8452c34b8b2a",
+    "gender": "male",
+    "parentId": [
+      "_mucb"
+    ],
+    "motherId": "_gcid",
+    "fatherId": "64f759e6036f8452c34b8b12",
+    "name": "मुनिराज"
+  },
+  {
+    "id": "64f75cd3036f8452c34b8b31",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f759e6036f8452c34b8b12",
+    "fatherId": "_gcid",
+    "name": "बीर बहादुर"
+  },
+  {
+    "id": "64f75d03036f8452c34b8b33",
+    "gender": "male",
+    "parentId": [
+      "_5rvt"
+    ],
+    "motherId": "64f759e6036f8452c34b8b12",
+    "fatherId": "_gcid",
+    "name": "सिद्धिदत्त"
+  },
+  {
+    "id": "64f75dce036f8452c34b8b3b",
+    "gender": "male",
+    "parentId": [
+      "_fg9n"
+    ],
+    "motherId": "_npga",
+    "fatherId": "64f75a30036f8452c34b8b19",
+    "name": "ललितराज"
+  },
+  {
+    "id": "64f75e16036f8452c34b8b43",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_rfq2",
+    "fatherId": "64f75ab4036f8452c34b8b1c",
+    "name": "जित बहादुर"
+  },
+  {
+    "id": "64f75e50036f8452c34b8b49",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f75ab4036f8452c34b8b1c",
+    "fatherId": "_rfq2",
+    "name": "कुल बहादुर"
+  },
+  {
+    "id": "64f890ad036f8452c34b8b51",
+    "gender": "male",
+    "parentId": [
+      "_wdzw"
+    ],
+    "motherId": "_gb8n",
+    "fatherId": "64f75ad3036f8452c34b8b21",
+    "name": "कृष्ण बहादुर"
+  },
+  {
+    "id": "64f89190036f8452c34b8b58",
+    "gender": "male",
+    "parentId": [
+      "_wjyv"
+    ],
+    "motherId": "64f75ad3036f8452c34b8b21",
+    "fatherId": "_gb8n",
+    "name": "बिष्णु बहादुर"
+  },
+  {
+    "id": "64f891ba036f8452c34b8b5c",
+    "gender": "male",
+    "parentId": [
+      "_t2ca"
+    ],
+    "motherId": "64f75ad3036f8452c34b8b21",
+    "fatherId": "_gb8n",
+    "name": "हरि बहादुर"
+  },
+  {
+    "id": "64f891d5036f8452c34b8b60",
+    "gender": "male",
+    "parentId": [
+      "_808u"
+    ],
+    "motherId": "64f75ad3036f8452c34b8b21",
+    "fatherId": "_gb8n",
+    "name": "भक्त बहादुर"
+  },
+  {
+    "id": "64f8920e036f8452c34b8b65",
+    "gender": "male",
+    "parentId": [
+      "_g3ej"
+    ],
+    "motherId": "_mucb",
+    "fatherId": "64f75ca9036f8452c34b8b2a",
+    "name": "जीतराज"
+  },
+  {
+    "id": "64f8926f036f8452c34b8b6c",
+    "gender": "male",
+    "parentId": [
+      "_n7un"
+    ],
+    "motherId": "64f75ca9036f8452c34b8b2a",
+    "fatherId": "_mucb",
+    "name": "किर्तराज"
+  },
+  {
+    "id": "64f892d3036f8452c34b8b70",
+    "gender": "male",
+    "parentId": [
+      "_5n3z"
+    ],
+    "motherId": "64f75ca9036f8452c34b8b2a",
+    "fatherId": "_mucb",
+    "name": "हर्सराज"
+  },
+  {
+    "id": "64f89336036f8452c34b8b75",
+    "gender": "male",
+    "parentId": [
+      "_kfol"
+    ],
+    "motherId": "_5rvt",
+    "fatherId": "64f75d03036f8452c34b8b33",
+    "name": "काशीलाल"
+  },
+  {
+    "id": "64f89372036f8452c34b8b7b",
+    "gender": "male",
+    "parentId": [
+      "_hxax"
+    ],
+    "motherId": "64f75d03036f8452c34b8b33",
+    "fatherId": "_5rvt",
+    "name": "जोगलाल"
+  },
+  {
+    "id": "64f893a6036f8452c34b8b7f",
+    "gender": "male",
+    "parentId": [
+      "_q8nr"
+    ],
+    "motherId": "_fg9n",
+    "fatherId": "64f75dce036f8452c34b8b3b",
+    "name": "श्यामराज"
+  },
+  {
+    "id": "64f893c7036f8452c34b8b84",
+    "gender": "male",
+    "parentId": [
+      "_b88h"
+    ],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "कृष्णराज"
+  },
+  {
+    "id": "64f893ea036f8452c34b8b88",
+    "gender": "male",
+    "parentId": [
+      "_wixn"
+    ],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "बाबुकाजी"
+  },
+  {
+    "id": "64f89400036f8452c34b8b8c",
+    "gender": "male",
+    "parentId": [
+      "_o561"
+    ],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "इन्द्रराज"
+  },
+  {
+    "id": "64f89437036f8452c34b8b90",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "राम"
+  },
+  {
+    "id": "64f8944a036f8452c34b8b94",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "लक्ष्मण"
+  },
+  {
+    "id": "64f89469036f8452c34b8b98",
+    "gender": "male",
+    "parentId": [
+      "_75g2"
+    ],
+    "motherId": "64f75dce036f8452c34b8b3b",
+    "fatherId": "_fg9n",
+    "name": "दसराम"
+  },
+  {
+    "id": "64f894ee036f8452c34b8b9c",
+    "gender": "male",
+    "parentId": [
+      "_1mww"
+    ],
+    "motherId": "_wdzw",
+    "fatherId": "64f890ad036f8452c34b8b51",
+    "name": "राम मुकुन्द"
+  },
+  {
+    "id": "64f8957b036f8452c34b8ba2",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_1mww",
+    "fatherId": "64f894ee036f8452c34b8b9c",
+    "name": "ज्ञान  मुकुन्द"
+  },
+  {
+    "id": "64f895a9036f8452c34b8ba8",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f894ee036f8452c34b8b9c",
+    "fatherId": "_1mww",
+    "name": "श्री मुकुन्द"
+  },
+  {
+    "id": "64f895d2036f8452c34b8bac",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f894ee036f8452c34b8b9c",
+    "fatherId": "_1mww",
+    "name": "मोहन"
+  },
+  {
+    "id": "64f8964e036f8452c34b8bb1",
+    "gender": "male",
+    "parentId": [
+      "_scax"
+    ],
+    "motherId": "_t2ca",
+    "fatherId": "64f891ba036f8452c34b8b5c",
+    "name": "एकराम"
+  },
+  {
+    "id": "64f8966c036f8452c34b8bb7",
+    "gender": "male",
+    "parentId": [
+      "_emoa"
+    ],
+    "motherId": "64f891ba036f8452c34b8b5c",
+    "fatherId": "_t2ca",
+    "name": "जीराम"
+  },
+  {
+    "id": "64f89684036f8452c34b8bbb",
+    "gender": "male",
+    "parentId": [
+      "_vfik"
+    ],
+    "motherId": "64f891ba036f8452c34b8b5c",
+    "fatherId": "_t2ca",
+    "name": "चिनीकाजी"
+  },
+  {
+    "id": "64f896c2036f8452c34b8bbf",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_scax",
+    "fatherId": "64f8964e036f8452c34b8bb1",
+    "name": "बाबूराज"
+  },
+  {
+    "id": "64f896e9036f8452c34b8bc4",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_emoa",
+    "fatherId": "64f8966c036f8452c34b8bb7",
+    "name": "दीपक"
+  },
+  {
+    "id": "64f89724036f8452c34b8bcb",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_vfik",
+    "fatherId": "64f89684036f8452c34b8bbb",
+    "name": "बुलबुल"
+  },
+  {
+    "id": "64f89747036f8452c34b8bd1",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f89684036f8452c34b8bbb",
+    "fatherId": "_vfik",
+    "name": "बिश्वास"
+  },
+  {
+    "id": "64f89846036f8452c34b8bd7",
+    "gender": "male",
+    "parentId": [
+      "_63o7"
+    ],
+    "motherId": "_wjyv",
+    "fatherId": "64f89190036f8452c34b8b58",
+    "name": "कृष्ण मुकुन्द"
+  },
+  {
+    "id": "64f89886036f8452c34b8bdc",
+    "gender": "male",
+    "parentId": [
+      "_9k9q"
+    ],
+    "motherId": "_63o7",
+    "fatherId": "64f89846036f8452c34b8bd7",
+    "name": "बिपेन्द्र"
+  },
+  {
+    "id": "64f898b3036f8452c34b8be1",
+    "gender": "male",
+    "parentId": [
+      "_t3rj"
+    ],
+    "motherId": "64f89846036f8452c34b8bd7",
+    "fatherId": "_63o7",
+    "name": "दिपेश"
+  },
+  {
+    "id": "64f8990e036f8452c34b8be7",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_9k9q",
+    "fatherId": "64f89886036f8452c34b8bdc",
+    "name": "एलेस"
+  },
+  {
+    "id": "64f89957036f8452c34b8bed",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_t3rj",
+    "fatherId": "64f898b3036f8452c34b8be1",
+    "name": "एरिक"
+  },
+  {
+    "id": "64f899a5036f8452c34b8bf3",
+    "gender": "male",
+    "parentId": [
+      "_qudc"
+    ],
+    "motherId": "_808u",
+    "fatherId": "64f891d5036f8452c34b8b60",
+    "name": "मदन"
+  },
+  {
+    "id": "64f899e7036f8452c34b8bf9",
+    "gender": "male",
+    "parentId": [
+      "_dlfh"
+    ],
+    "motherId": "64f891d5036f8452c34b8b60",
+    "fatherId": "_808u",
+    "name": "योग्य बहादुर"
+  },
+  {
+    "id": "64f89a14036f8452c34b8bfd",
+    "gender": "male",
+    "parentId": [
+      "_w565"
+    ],
+    "motherId": "64f891d5036f8452c34b8b60",
+    "fatherId": "_808u",
+    "name": "माधव"
+  },
+  {
+    "id": "64f89a3a036f8452c34b8c01",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_qudc",
+    "fatherId": "64f899a5036f8452c34b8bf3",
+    "name": "सरन"
+  },
+  {
+    "id": "64f89a6e036f8452c34b8c07",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_dlfh",
+    "fatherId": "64f899e7036f8452c34b8bf9",
+    "name": "योगेन्द्र"
+  },
+  {
+    "id": "64f89a98036f8452c34b8c0c",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f899e7036f8452c34b8bf9",
+    "fatherId": "_dlfh",
+    "name": "दीपेन्द्र"
+  },
+  {
+    "id": "64f89abb036f8452c34b8c10",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_w565",
+    "fatherId": "64f89a14036f8452c34b8bfd",
+    "name": "सचिन"
+  },
+  {
+    "id": "64f89bc4036f8452c34b8c16",
+    "gender": "male",
+    "parentId": [
+      "_j6ti"
+    ],
+    "motherId": "_g3ej",
+    "fatherId": "64f8920e036f8452c34b8b65",
+    "name": "पन्चराज"
+  },
+  {
+    "id": "64f89c78036f8452c34b8c1b",
+    "gender": "male",
+    "parentId": [
+      "_3v2s"
+    ],
+    "motherId": "64f8920e036f8452c34b8b65",
+    "fatherId": "_g3ej",
+    "name": "अनन्तराज"
+  },
+  {
+    "id": "64f89cd0036f8452c34b8c1f",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_j6ti",
+    "fatherId": "64f89bc4036f8452c34b8c16",
+    "name": "सगेंद्र"
+  },
+  {
+    "id": "64f89d27036f8452c34b8c25",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f89bc4036f8452c34b8c16",
+    "fatherId": "_j6ti",
+    "name": "कक्षिन्द्र"
+  },
+  {
+    "id": "64f89dd2036f8452c34b8c29",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_3v2s",
+    "fatherId": "64f89c78036f8452c34b8c1b",
+    "name": "आलिस"
+  },
+  {
+    "id": "64f89e29036f8452c34b8c2e",
+    "gender": "male",
+    "parentId": [
+      "_19fg"
+    ],
+    "motherId": "_n7un",
+    "fatherId": "64f8926f036f8452c34b8b6c",
+    "name": "श्यामराज"
+  },
+  {
+    "id": "64f89e3e036f8452c34b8c33",
+    "gender": "male",
+    "parentId": [
+      "_em3a"
+    ],
+    "motherId": "64f8926f036f8452c34b8b6c",
+    "fatherId": "_n7un",
+    "name": "पस्पराज"
+  },
+  {
+    "id": "64f89e6f036f8452c34b8c37",
+    "gender": "male",
+    "parentId": [
+      "_9p4t"
+    ],
+    "motherId": "64f8926f036f8452c34b8b6c",
+    "fatherId": "_n7un",
+    "name": "क्यान्यूराज"
+  },
+  {
+    "id": "64f89e97036f8452c34b8c3b",
+    "gender": "male",
+    "parentId": [
+      "_57pl"
+    ],
+    "motherId": "64f8926f036f8452c34b8b6c",
+    "fatherId": "_n7un",
+    "name": "सानुराज"
+  },
+  {
+    "id": "64f89ec9036f8452c34b8c3f",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_19fg",
+    "fatherId": "64f89e29036f8452c34b8c2e",
+    "name": "राजन"
+  },
+  {
+    "id": "64f89ede036f8452c34b8c44",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f89e29036f8452c34b8c2e",
+    "fatherId": "_19fg",
+    "name": "राजू"
+  },
+  {
+    "id": "64f8a374036f8452c34b8c49",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_em3a",
+    "fatherId": "64f89e3e036f8452c34b8c33",
+    "name": "राजिप"
+  },
+  {
+    "id": "64f8a3ab036f8452c34b8c4e",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_9p4t",
+    "fatherId": "64f89e6f036f8452c34b8c37",
+    "name": "सिसन"
+  },
+  {
+    "id": "64f8a3dc036f8452c34b8c53",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f89e6f036f8452c34b8c37",
+    "fatherId": "_9p4t",
+    "name": "तुल्सीराज"
+  },
+  {
+    "id": "64f8a40e036f8452c34b8c57",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_57pl",
+    "fatherId": "64f89e97036f8452c34b8c3b",
+    "name": "संजय"
+  },
+  {
+    "id": "64f8a44c036f8452c34b8c5d",
+    "gender": "male",
+    "parentId": [
+      "_603s"
+    ],
+    "motherId": "_5n3z",
+    "fatherId": "64f892d3036f8452c34b8b70",
+    "name": "हरि राज"
+  },
+  {
+    "id": "64f8a46b036f8452c34b8c62",
+    "gender": "male",
+    "parentId": [
+      "_lx2a"
+    ],
+    "motherId": "64f892d3036f8452c34b8b70",
+    "fatherId": "_5n3z",
+    "name": "बालकृष्ण"
+  },
+  {
+    "id": "64f8a49e036f8452c34b8c66",
+    "gender": "male",
+    "parentId": [
+      "_c56h"
+    ],
+    "motherId": "_603s",
+    "fatherId": "64f8a44c036f8452c34b8c5d",
+    "name": "निर्मल"
+  },
+  {
+    "id": "64f8a4c9036f8452c34b8c6b",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_c56h",
+    "fatherId": "64f8a49e036f8452c34b8c66",
+    "name": "नितिन"
+  },
+  {
+    "id": "64f8a51c036f8452c34b8c70",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_lx2a",
+    "fatherId": "64f8a46b036f8452c34b8c62",
+    "name": "डेनिश"
+  },
+  {
+    "id": "64f8a55a036f8452c34b8c75",
+    "gender": "male",
+    "parentId": [
+      "_7lpl"
+    ],
+    "motherId": "_kfol",
+    "fatherId": "64f89336036f8452c34b8b75",
+    "name": "गोपाल"
+  },
+  {
+    "id": "64f8a57b036f8452c34b8c7a",
+    "gender": "male",
+    "parentId": [
+      "_2fql"
+    ],
+    "motherId": "64f89336036f8452c34b8b75",
+    "fatherId": "_kfol",
+    "name": "भक्तलाल"
+  },
+  {
+    "id": "64f8a5aa036f8452c34b8c7e",
+    "gender": "male",
+    "parentId": [
+      "_vmpc"
+    ],
+    "motherId": "64f89336036f8452c34b8b75",
+    "fatherId": "_kfol",
+    "name": "दिर्गलाल"
+  },
+  {
+    "id": "64f8a608036f8452c34b8c82",
+    "gender": "male",
+    "parentId": [
+      "_ryxy"
+    ],
+    "motherId": "64f89336036f8452c34b8b75",
+    "fatherId": "_kfol",
+    "name": "इन्द्रलाल"
+  },
+  {
+    "id": "64f8a643036f8452c34b8c87",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_7lpl",
+    "fatherId": "64f8a55a036f8452c34b8c75",
+    "name": "राम"
+  },
+  {
+    "id": "64f8a66a036f8452c34b8c8c",
+    "gender": "male",
+    "parentId": [
+      "_5k8e"
+    ],
+    "motherId": "_2fql",
+    "fatherId": "64f8a57b036f8452c34b8c7a",
+    "name": "भाई राम"
+  },
+  {
+    "id": "64f8a6a0036f8452c34b8c92",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_5k8e",
+    "fatherId": "64f8a66a036f8452c34b8c8c",
+    "name": "तुलसीराम"
+  },
+  {
+    "id": "64f8a6bd036f8452c34b8c97",
+    "gender": "male",
+    "parentId": [
+      "_z2p4"
+    ],
+    "motherId": "_vmpc",
+    "fatherId": "64f8a5aa036f8452c34b8c7e",
+    "name": "लक्ष्मन"
+  },
+  {
+    "id": "64f8a6ee036f8452c34b8c9d",
+    "gender": "male",
+    "parentId": [
+      "_wpi9"
+    ],
+    "motherId": "64f8a5aa036f8452c34b8c7e",
+    "fatherId": "_vmpc",
+    "name": "दिब्य"
+  },
+  {
+    "id": "64f8a705036f8452c34b8c9f",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_z2p4",
+    "fatherId": "64f8a6bd036f8452c34b8c97",
+    "name": "रोहन"
+  },
+  {
+    "id": "64f8a72b036f8452c34b8ca5",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_wpi9",
+    "fatherId": "64f8a6ee036f8452c34b8c9d",
+    "name": "दिरोज"
+  },
+  {
+    "id": "64f8a76e036f8452c34b8cab",
+    "gender": "male",
+    "parentId": [
+      "_56in"
+    ],
+    "motherId": "_ryxy",
+    "fatherId": "64f8a608036f8452c34b8c82",
+    "name": "पधमलाल"
+  },
+  {
+    "id": "64f8a7c2036f8452c34b8cb0",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_56in",
+    "fatherId": "64f8a76e036f8452c34b8cab",
+    "name": "प्रज्ञान"
+  },
+  {
+    "id": "64f8a7f6036f8452c34b8cb5",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f8a76e036f8452c34b8cab",
+    "fatherId": "_56in",
+    "name": "अनित्य  राज"
+  },
+  {
+    "id": "64f8a81f036f8452c34b8cb9",
+    "gender": "male",
+    "parentId": [
+      "_d12s"
+    ],
+    "motherId": "64f8a608036f8452c34b8c82",
+    "fatherId": "_ryxy",
+    "name": "नरेन्द्र"
+  },
+  {
+    "id": "64f8a83b036f8452c34b8cbe",
+    "gender": "male",
+    "parentId": [
+      "_of7r"
+    ],
+    "motherId": "_d12s",
+    "fatherId": "64f8a81f036f8452c34b8cb9",
+    "name": "निरोन"
+  },
+  {
+    "id": "64f8a8d8036f8452c34b8ccb",
+    "gender": "male",
+    "parentId": [
+      "_3qgz"
+    ],
+    "motherId": "64f89372036f8452c34b8b7b",
+    "fatherId": "_hxax",
+    "name": "आसाराम"
+  },
+  {
+    "id": "64f8a8f9036f8452c34b8ccd",
+    "gender": "male",
+    "parentId": [
+      "_smb5"
+    ],
+    "motherId": "64f89372036f8452c34b8b7b",
+    "fatherId": "_hxax",
+    "name": "पुनिराम"
+  },
+  {
+    "id": "64f8a92e036f8452c34b8cd2",
+    "gender": "male",
+    "parentId": [
+      "_xpre"
+    ],
+    "motherId": "64f89372036f8452c34b8b7b",
+    "fatherId": "_hxax",
+    "name": "डील्लीराम"
+  },
+  {
+    "id": "64f8a9a9036f8452c34b8cd6",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_3qgz",
+    "fatherId": "64f8a8d8036f8452c34b8ccb",
+    "name": "जीवन"
+  },
+  {
+    "id": "64f8a9d3036f8452c34b8cdc",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f8a8d8036f8452c34b8ccb",
+    "fatherId": "_3qgz",
+    "name": "सुमन"
+  },
+  {
+    "id": "64f8a9fb036f8452c34b8ce0",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_smb5",
+    "fatherId": "64f8a8f9036f8452c34b8ccd",
+    "name": "रोज़ेन"
+  },
+  {
+    "id": "64f8aa4c036f8452c34b8ce6",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_xpre",
+    "fatherId": "64f8a92e036f8452c34b8cd2",
+    "name": "दिकेश"
+  },
+  {
+    "id": "64f8aa6b036f8452c34b8ceb",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f8a92e036f8452c34b8cd2",
+    "fatherId": "_xpre",
+    "name": "दिकीन"
+  },
+  {
+    "id": "64f8ac56036f8452c34b8cf1",
+    "gender": "male",
+    "parentId": [
+      "_mjyw"
+    ],
+    "motherId": "_q8nr",
+    "fatherId": "64f893a6036f8452c34b8b7f",
+    "name": "अनिल"
+  },
+  {
+    "id": "64f8ac77036f8452c34b8cf6",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_mjyw",
+    "fatherId": "64f8ac56036f8452c34b8cf1",
+    "name": "अनूप"
+  },
+  {
+    "id": "64f8acb0036f8452c34b8cfd",
+    "gender": "male",
+    "parentId": [
+      "_di8b"
+    ],
+    "motherId": "_b88h",
+    "fatherId": "64f893c7036f8452c34b8b84",
+    "name": "मन्दराम"
+  },
+  {
+    "id": "64f8aceb036f8452c34b8d02",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_di8b",
+    "fatherId": "64f8acb0036f8452c34b8cfd",
+    "name": "आशिस"
+  },
+  {
+    "id": "64f8ad91036f8452c34b8d08",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "64f8acb0036f8452c34b8cfd",
+    "fatherId": "_di8b",
+    "name": "आसिम"
+  },
+  {
+    "id": "64f8adcd036f8452c34b8d0c",
+    "gender": "male",
+    "parentId": [
+      "_v2du"
+    ],
+    "motherId": "_wixn",
+    "fatherId": "64f893ea036f8452c34b8b88",
+    "name": "जनकराज"
+  },
+  {
+    "id": "64f8add0036f8452c34b8d0f",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_3cvh",
+    "fatherId": "_z9fn"
+  },
+  {
+    "id": "64f8ae02036f8452c34b8d14",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_v2du",
+    "fatherId": "64f8adcd036f8452c34b8d0c",
+    "name": "जनम"
+  },
+  {
+    "id": "64f8ae32036f8452c34b8d19",
+    "gender": "male",
+    "parentId": [
+      "_aw8p"
+    ],
+    "motherId": "_o561",
+    "fatherId": "64f89400036f8452c34b8b8c",
+    "name": "इन्तूराज"
+  },
+  {
+    "id": "64f8ae91036f8452c34b8d1e",
+    "gender": "male",
+    "parentId": [
+      "_68mf"
+    ],
+    "motherId": "64f89400036f8452c34b8b8c",
+    "fatherId": "_o561",
+    "name": "कबिराज"
+  },
+  {
+    "id": "64f8aeb5036f8452c34b8d22",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_aw8p",
+    "fatherId": "64f8ae32036f8452c34b8d19",
+    "name": "अनमोल"
+  },
+  {
+    "id": "64f8aed8036f8452c34b8d27",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_68mf",
+    "fatherId": "64f8ae91036f8452c34b8d1e",
+    "name": "कसम"
+  },
+  {
+    "id": "64f8af04036f8452c34b8d2c",
+    "gender": "male",
+    "parentId": [
+      "_9rb8"
+    ],
+    "motherId": "_75g2",
+    "fatherId": "64f89469036f8452c34b8b98",
+    "name": "कबिराज"
+  },
+  {
+    "id": "64f8af21036f8452c34b8d31",
+    "gender": "male",
+    "parentId": [],
+    "motherId": "_9rb8",
+    "fatherId": "64f8af04036f8452c34b8d2c",
+    "name": "रिदम"
+  }
+]
