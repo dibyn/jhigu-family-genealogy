@@ -1,35 +1,27 @@
 import React from 'react';
-// pages/index.tsx
-
-import { getPersons } from '@/lib/person-db';
-import { createPerson, deletePerson, updatePerson } from '@/lib/person-db';
-import { FamilyTreeChart } from '@/components/family-tree';
-
-import { Root } from './interfaces';
+import Link from 'next/link';
 
 export default async function HomePage() {
-  const { persons } = await getPersons();
-  const handlePersons = async (args: any) => {
-  //  args: {
-  //   addNodesData: object[];
-  //   updateNodesData: object[];
-  //   removeNodeId: string | number;
-  // }
-    "use server"; // mark function as a server action (fixes the error)
-    if (args.addNodesData.length)
-      await createPerson(args.addNodesData[0] as Root);
-    if (args.updateNodesData.length && args.updateNodesData[0]['id'])
-      await updatePerson(
-        args.updateNodesData[0]['id'],
-        args.addNodesData[0] as Root
-      );
-    if (args.removeNodeId) await deletePerson(args.removeNodeId.toString());
-    return false; // to cancel the operation
-  };
-  // console.log({ persons });
   return (
-    <div className="container mx-auto p-4">
-      <FamilyTreeChart persons={persons} handlePersons={handlePersons} />
+    <div className="bg-gray-100">
+      <header className="bg-white shadow">
+        <nav className="container mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/" className="text-lg font-bold text-gray-800">
+            My Family Website
+          </Link>
+          <Link href="/chart" className="text-gray-600 hover:text-gray-800">
+            View Family Chart
+          </Link>
+        </nav>
+      </header>
+      <main className="container mx-auto px-4 py-8">
+        {/* Your main content goes here */}
+      </main>
+      <footer className="bg-gray-200 py-4">
+        <div className="container mx-auto px-4 text-center text-gray-600">
+          &copy; 2024 My Family Website. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }

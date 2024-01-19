@@ -25,6 +25,7 @@ type FamilyUnit = {
  */
 const createOrgJsonStructureForPerson = ({ name, id }: { name: string; id: string; }): object => ({
   expanded: true,
+  unstyled: true,
   type: 'person',
   className: maleStyles,
   style: { borderRadius: '12px' },
@@ -175,7 +176,7 @@ export default function ColoredDemo() {
   }) => {
     if (node.type === 'person') {
       return (
-        <div className="flex flex-column">
+        <div style={customStyles.node} className="flex flex-column">
           <div className="flex flex-column align-items-center">
             <NextImage
               width={48}
@@ -196,7 +197,23 @@ export default function ColoredDemo() {
 
   return (
     <div className="w-full overflow-x-scroll">
-      <OrganizationChart value={familyJSON} nodeTemplate={nodeTemplate} />
+      <OrganizationChart
+        value={familyJSON}
+        nodeTemplate={nodeTemplate}
+        // style={customStyles.orgchart}÷
+      />
     </div>
   );
 }
+  const customStyles = {
+    orgchart: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    node: {
+      marginLeft: '16px', // Adjust the spacing between nodes
+      marginRight: '16px'
+    }
+  };
